@@ -1,6 +1,7 @@
 use std::collections::HashSet;
 
 use cargo_metadata::Message;
+use clap::Parser;
 
 /// A simple cargo command to strip duplicate warnings from the json output of a
 /// cargo command.
@@ -15,6 +16,7 @@ struct Args {
 }
 
 fn main() -> anyhow::Result<()> {
+    let _args = Args::parse();
     let stdin = std::io::stdin();
     let mut seen = HashSet::new();
 
