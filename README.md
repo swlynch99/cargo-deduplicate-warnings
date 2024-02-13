@@ -10,5 +10,5 @@ avoid the issue by stripping them out.
 
 ## Usage
 ```bash
-cargo clippy --format json | cargo deduplicate-warnings | ...
+cargo clippy --message-format json | cargo deduplicate-warnings | ...
 ```
