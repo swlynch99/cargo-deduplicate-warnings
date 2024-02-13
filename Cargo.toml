@@ -3,6 +3,7 @@ name = "cargo-deduplicate-warnings"
 version = "0.1.0"
 edition = "2021"
 authors = ["Sean Lynch <sean@lynches.ca>"]
+license = "MIT OR Apache-2.0"
 description = "Deduplicate warning messages in the cargo json output"
 
 [dependencies]
